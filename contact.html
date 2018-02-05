@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="lib/normalize/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="lib/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="lib/jquery/jquery-3.3.1.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<div class="navbar-container fixed-top bg-orange">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="./index.html"><img src="images/logo_white.svg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./company.html">Company</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./business.html">Business</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./news.html">News</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shop</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="container-fluid contact">
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="col-7 project">
+          <div class="title">Project</div>
+          <form>
+            <div class="form-group row">
+              <label for="company_name" class="col-2 col-form-label">회사명</label>
+              <div class="col-10">
+                <input type="text" name="company_name" id="company_name" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="director" class="col-2 col-form-label">담당자명</label>
+              <div class="col-10">
+                <input type="text" name="director" id="director" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="phone" class="col-2 col-form-label">연락처</label>
+              <div class="col-10">
+                <input type="text" name="phone" id="phone" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-2 col-form-label">이메일</label>
+              <div class="col-10">
+                <input type="text" name="email" id="email" class="form-control" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="upload" class="col-2 col-form-label">첨부파일</label>
+              <div class="input-group col-10">
+                <div class="custom-file">
+                  <input type="file" name="upload" id="upload" class="custom-file-input" />
+                  <label for="upload" class="custom-file-label">파일을 선택하세요.</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-5">
+          <div class="title">Message</div>
+          <textarea class="form-control" style="height: 268px"></textarea>
+        </div>
+      </div>
+      <div style="text-align: right;">
+        <button class="btn btn-dark">Send</button>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div id="map"></div>
+  </div>
+</div>
+<div class="footer contact">
+  <div class="row">
+    <div class="col-8 company-info">
+      <img src="images/logo.svg" style="width: 164px; height: 41px;">
+      <div class="company-additional-info">
+        <p>상호 : 코핀 커뮤니케이션 | 주소 : 서울시 서초구 서초동 1573=14 웅진빌딩 11층</p>
+        <p>사업자등록번호 : 120-12-23732 | 사업자(대표자) : 유영학 | Tel : 070-7678-7455</p>
+        <p>COPYRIGHTⓒ2014 Copin Communication. All Rights Reserved.</p>
+      </div>
+    </div>
+    <div class="col-4" style="text-align: right;">
+      <div class="button-list">
+        <img src="images/footer/facebook.svg" alt="페이스북">
+        <img src="images/footer/twitter.svg" alt="트위터">
+        <img src="images/footer/instagram.svg" alt="인스타그램">
+        <img src="images/footer/blog.svg" alt="블로그">
+        <img src="images/footer/youtube.svg" alt="유튜브">
+      </div>
+      <button typ="button" class="company-intro-btn">회사소개서 PDF</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
